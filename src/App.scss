@@ -1,7 +1,7 @@
 // Resets & Global Styles
-@use "./styles/core/typography" as *;
-@use "./styles/core/mixins" as *;
-@use "./styles/core/variables" as *;
+@use "./styles/partials/typography" as *;
+@use "./styles/partials/mixins" as *;
+@use "./styles/partials/variables" as *;
 
 *,
 *::before,
