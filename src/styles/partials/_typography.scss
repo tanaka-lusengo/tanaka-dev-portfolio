@@ -1,0 +1,47 @@
+@use "./mixins" as *;
+
+// --------------------------------------------------
+// import fonts
+
+// Optic
+
+@font-face {
+  font-family: "optic";
+  src: url("../../assets/fonts/OPTICuento/OPTICuento.otf") format("OpenType");
+}
+
+// Founders
+
+@font-face {
+  font-family: "founders";
+  src: url("../../assets/fonts/Founders_Grotesk/FoundersGrotesk-Regular.otf")
+    format("OpenType");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "founders";
+  src: url("../../assets/fonts/Founders_Grotesk/FoundersGrotesk-RegularItalic.otf")
+    format("OpenType");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "founders";
+  src: url("../../assets/fonts/Founders_Grotesk/FoundersGrotesk-Semibold.otf")
+    format("OpenType");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "founders";
+  src: url("../../assets/fonts/Founders_Grotesk/FoundersGrotesk-Bold.otf")
+    format("OpenType");
+  font-weight: 700;
+  font-style: bold;
+}
+
+// --------------------------------------------------
