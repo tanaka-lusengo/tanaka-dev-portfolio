@@ -1,0 +1,33 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.technologies {
+  height: 50vh;
+  &__layer {
+    margin: 0 2.5rem;
+  }
+
+  &__title--typeriter {
+    @include font-source(6.25rem, 400);
+    font-family: optic;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.2rem;
+    animation: typing 5s steps(50, end), blink-caret 1.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  &__text-container {
+    @include font-source(1.25rem, 400);
+    margin-top: 0.9375rem;
+  }
+}
