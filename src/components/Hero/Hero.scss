@@ -1,0 +1,74 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.hero {
+  margin: 0 auto;
+  background-color: $primary1;
+
+  &__banner-container {
+    @include flex(center, center, column);
+    height: 100vh;
+  }
+
+  &__title {
+    @include font-source(55px, 400);
+    font-family: optic;
+  }
+
+  &__scroll-container {
+    @include flex(center, center, column);
+    position: relative;
+    top: 100px;
+  }
+}
+
+@include tablet {
+  .hero {
+    &__title {
+      @include font-source(100px, 400);
+    }
+
+    &__title-full {
+      position: relative;
+      right: 150px;
+    }
+
+    &__title-stack {
+      position: relative;
+      left: 200px;
+    }
+
+    &__scroll-container {
+      top: 50px;
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    &__title {
+      @include font-source(150px, 400);
+    }
+
+    &__scroll-container {
+      animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
