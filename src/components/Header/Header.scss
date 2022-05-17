@@ -1,0 +1,74 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $primary1;
+  z-index: 999;
+
+  &__layer {
+    @include flex(space-between, center);
+    margin: 0 40px;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    @include font-source(20px, 400);
+    color: $primaryText;
+  }
+
+  &__nav-list {
+    @include flex(center, center);
+  }
+
+  &__nav-list-item {
+    @include font-source(20px, 400);
+    color: $primaryText;
+  }
+}
+
+@include tablet {
+  .header {
+    &__logo {
+      @include font-source(22px, 400);
+    }
+
+    &__nav-list-item {
+      @include font-source(22px, 400);
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    &__logo {
+      @include font-source(30px, 400);
+    }
+
+    &__nav-list-item {
+      @include font-source(30px, 400);
+
+      &--active {
+        color: $primary2;
+      }
+
+      &:after {
+        display: block;
+        content: "";
+        border-bottom: solid 0.125rem $primary2;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        transform-origin: 100% 0%;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: 0% 100%;
+      }
+    }
+  }
+}
