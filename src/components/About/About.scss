@@ -1,0 +1,76 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.about {
+  margin-top: -100px;
+  height: 130vh;
+
+  &__layer {
+    position: relative;
+    margin: 0 2.5rem;
+    padding: 20px 0;
+  }
+
+  &__title {
+    @include font-source(55px, 400);
+    font-family: optic;
+    position: relative;
+    top: 100px;
+  }
+
+  &__image {
+    @include height-width(100%, 100%);
+    max-width: 800px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__text-highlight {
+    @include font-source(30px, 700);
+    font-family: optic;
+  }
+
+  &__divide {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@include tablet {
+  .about {
+    &__title {
+      @include font-source(100px, 400);
+      top: 160px;
+    }
+
+    &__text {
+      @include font-source(15px, 400);
+      max-width: 800px;
+      margin: 0 50px 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include desktop {
+  .about {
+    &__layer {
+      @include flex(space-evenly, center);
+    }
+
+    &__text-container {
+      margin-top: 200px;
+    }
+
+    &__text {
+      @include font-source(18px, 400);
+      width: 500px;
+    }
+  }
+}

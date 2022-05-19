@@ -1,0 +1,76 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.tech-stack {
+  height: 50vh;
+
+  &__layer {
+    margin: 0 2.5rem;
+  }
+
+  &__title--typeriter {
+    @include font-source(3.4375rem, 400);
+    @include flex(center, center);
+    flex-wrap: wrap;
+    font-family: optic;
+    margin: 1.25rem 0;
+  }
+
+  &__text-container {
+    @include font-source(1.125rem, 400);
+    text-align: center;
+  }
+
+  &__icons {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include flex(center, center);
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    @include height-width(auto, 5.625rem);
+    object-fit: fill;
+    margin: 3.125rem 0.9375rem 1.875rem;
+  }
+}
+
+@include tablet {
+  .tech-stack {
+    &__title--typeriter {
+      @include font-source(5.625rem, 400);
+    }
+
+    &__text-container {
+      @include font-source(1.25rem, 400);
+    }
+  }
+}
+
+@include desktop {
+  .tech-stack {
+    &__title--typeriter {
+      justify-content: flex-start;
+      overflow: hidden;
+      white-space: nowrap;
+      letter-spacing: 0.2rem;
+      animation: typing 5s steps(50, end), blink-caret 1.5s step-end infinite;
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    &__text-container {
+      text-align: start;
+    }
+  }
+}
