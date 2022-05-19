@@ -14,16 +14,20 @@ const Header = () => {
 
         <nav className="header__nav">
           <ul className="header__nav-list">
-            <Link smooth to="#technologies" className="header__nav-list-item ">
-              Technologies
+            <Link smooth to="#about" className="header__nav-list-item">
+              About
+            </Link>
+
+            <Link smooth to="#tech-stack" className="header__nav-list-item ">
+              Tech-Stack
             </Link>
 
             <Link smooth to="#portfolio" className="header__nav-list-item">
               Portfolio
             </Link>
 
-            <Link smooth to="#about" className="header__nav-list-item">
-              About
+            <Link smooth to="#contact" className="header__nav-list-item">
+              Contact
             </Link>
           </ul>
         </nav>

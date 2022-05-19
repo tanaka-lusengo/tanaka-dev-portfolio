@@ -36,7 +36,7 @@ const Hero = () => {
         >
           <h1 className="hero__title hero__title-developer">DEVELOPER</h1>
         </div>
-        <Link smooth to="#technologies">
+        <Link smooth to="#about">
           <div className="hero__scroll-container">
             <ExpandMoreIcon fontSize="large" />
           </div>
