@@ -3,8 +3,7 @@
 @use "../../styles/partials/typography" as *;
 
 .tech-stack {
-  height: 50vh;
-
+  margin-bottom: 50px;
   &__layer {
     margin: 0 2.5rem;
   }
@@ -58,6 +57,7 @@
       white-space: nowrap;
       letter-spacing: 0.2rem;
       animation: typing 5s steps(50, end), blink-caret 1.5s step-end infinite;
+      animation-iteration-count: infinite;
     }
 
     @keyframes typing {

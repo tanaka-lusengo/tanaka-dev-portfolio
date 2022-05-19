@@ -39,6 +39,7 @@ const TechStack = () => {
         </div>
         <div
           data-aos="fade-up"
+          data-aos-delay="50"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out-back"
           className="tech-stack__text-container"
@@ -133,6 +134,7 @@ const TechStack = () => {
           </ul>
         </div>
       </div>
+      <p className="about__divide">~</p>
     </section>
   );
 };
