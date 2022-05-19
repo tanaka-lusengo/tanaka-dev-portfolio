@@ -1,0 +1,145 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.portfolio {
+  &__layer {
+    margin: 0 2.5rem;
+  }
+
+  &__title {
+    @include font-source(3.4375rem, 400);
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: optic;
+    margin: 60px 0;
+  }
+
+  &__number {
+    @include font-source(30px, 400);
+    font-family: optic;
+    margin-top: 20px;
+  }
+
+  &__project-name {
+    margin: 5px 0 15px;
+  }
+
+  &__tech-stack-list {
+    @include flex(flex-start, center);
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
+
+  &__tech-stack-item {
+    margin-right: 10px;
+  }
+
+  &__image {
+    @include height-width(100%, 100%);
+    max-width: 300px;
+    object-fit: cover;
+  }
+
+  &__external-link-list {
+    @include flex(flex-start, center);
+    margin: 25px 0 30px;
+  }
+
+  &__link-item {
+    @include font-source(15px, 600);
+    color: $primaryText;
+    margin-right: 15px;
+
+    &--hover:hover {
+      border-bottom: 3px solid $primary1;
+    }
+  }
+
+  &__divide--mobile-tablet {
+    margin: 0 auto 10px;
+    border: none;
+    background-color: $primaryText;
+    color: $primaryText;
+    border-radius: 5px;
+    height: 1.5px;
+    max-width: 700px;
+  }
+
+  &__divide--desktop {
+    display: none;
+  }
+}
+
+@include tablet {
+  .portfolio {
+    &__layer {
+      margin: 0 70px;
+    }
+    &__projects__list {
+      text-align: center;
+    }
+
+    &__title {
+      @include font-source(5.625rem, 400);
+    }
+
+    &__description,
+    &__tech-stack-item {
+      @include font-source(1.25rem, 400);
+    }
+
+    &__link-item {
+      @include font-source(1.25rem, 600);
+    }
+
+    &__tech-stack-list {
+      justify-content: center;
+    }
+
+    &__external-link-list {
+      justify-content: center;
+    }
+
+    &__image {
+      @include height-width(100%, 100%);
+      max-width: 350px;
+    }
+  }
+}
+
+@include desktop {
+  .portfolio {
+    &__projects__list {
+      text-align: start;
+    }
+
+    &__list-item {
+      @include flex(space-between, center);
+      margin-bottom: 25px;
+    }
+
+    &__tech-stack-list {
+      justify-content: start;
+    }
+
+    &__description {
+      width: 700px;
+    }
+
+    &__divide--mobile-tablet {
+      display: none;
+    }
+
+    &__divide--desktop {
+      display: block;
+      margin: 0 auto 40px;
+      border: none;
+      background-color: $primaryText;
+      color: $primaryText;
+      border-radius: 5px;
+      height: 1.5px;
+      width: 500px;
+    }
+  }
+}
