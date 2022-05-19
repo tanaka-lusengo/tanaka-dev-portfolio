@@ -3,15 +3,14 @@ import "./Hero.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Hero = () => {
   // initialising AOS (animate On Scroll)
-  useEffect(() => {
-    AOS.init();
-  });
+  AOS.init();
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero__banner-container">
         <div
           data-aos="fade-right"
@@ -37,9 +36,11 @@ const Hero = () => {
         >
           <h1 className="hero__title hero__title-developer">DEVELOPER</h1>
         </div>
-        <div className="hero__scroll-container">
-          <ExpandMoreIcon fontSize="large" />
-        </div>
+        <Link smooth to="#about">
+          <div className="hero__scroll-container">
+            <ExpandMoreIcon fontSize="large" />
+          </div>
+        </Link>
       </div>
     </section>
   );

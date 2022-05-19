@@ -1,13 +1,15 @@
 import React from "react";
+import About from "../../components/About/About";
 import Hero from "../../components/Hero/Hero";
-import MainContent from "../../components/MainContent/MainContent";
+import TechStack from "../../components/TechStack/TechStack";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <section>
       <Hero />
-      <MainContent />
+      <About />
+      <TechStack />
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Header.scss";
 
 const Header = () => {
@@ -7,25 +7,28 @@ const Header = () => {
     <header className="header">
       <div className="header__layer">
         <div className="header__logo-container">
-          <NavLink to="/">
+          <Link smooth to="#hero">
             <h1 className="header__logo">Tanaka Lusengo</h1>
-          </NavLink>
+          </Link>
         </div>
 
         <nav className="header__nav">
           <ul className="header__nav-list">
-            <li>
-              <NavLink
-                to="/about"
-                className={(isActive) =>
-                  "header__nav-list-item header__nav-list-item" +
-                  (!isActive ? "" : "--active")
-                }
-              >
-                {" "}
-                About
-              </NavLink>
-            </li>
+            <Link smooth to="#about" className="header__nav-list-item">
+              About
+            </Link>
+
+            <Link smooth to="#tech-stack" className="header__nav-list-item ">
+              Tech-Stack
+            </Link>
+
+            <Link smooth to="#portfolio" className="header__nav-list-item">
+              Portfolio
+            </Link>
+
+            <Link smooth to="#contact" className="header__nav-list-item">
+              Contact
+            </Link>
           </ul>
         </nav>
       </div>
