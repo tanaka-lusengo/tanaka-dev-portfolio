@@ -62,9 +62,9 @@
     }
 
     &__nav-list-item {
-      @include font-source(1.875rem, 400);
+      @include font-source(1.5625rem, 400);
 
-      &:after {
+      &::after {
         display: block;
         content: "";
         border-bottom: solid 0.125rem $primary2;
@@ -73,7 +73,7 @@
         transform-origin: 100% 0%;
       }
 
-      &:hover:after {
+      &:hover::after {
         transform: scaleX(1);
         transform-origin: 0% 100%;
       }

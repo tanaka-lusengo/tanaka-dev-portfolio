@@ -31,27 +31,26 @@ const About = () => {
             <span className="about__text-highlight">Born in London</span>,
             attended school in South Africa before coming back to the UK to
             further pursue higher education and new experiences. After exploring
-            my curiosity Coding in my spare time, taking courses in UX/UI Design
-            and Data Science, this eventually lead to a career change from
-            Property Development into Web Development!
+            my curiosity by coding in my spare time, taking courses in UX/UI
+            Design and Data Science, this eventually lead to a career change
+            from Property Development into Web Development!
           </p>
           <p data-aos="fade-right" className="about__text">
             <span className="about__text-highlight">Post Graduation</span> from
-            a 12-week immersive Web Development Bootcamp, I now find myself
-            currently working as a Web Development Teaching Assistant.
+            a 3-month immersive Web Development Bootcamp, I felt honored to be
+            selected to stay on and rejoin the company as a Web Development
+            Teaching Assistant to help support and mentor the next cohort.
           </p>
           <p data-aos="fade-right" className="about__text">
-            {" "}
             <span className="about__text-highlight">Always Curious</span> and
             eager to learn, meet new people as well as take on new and exciting
             challenges however large or small!
           </p>
           <p data-aos="fade-right" className="about__text">
-            {" "}
             <span className="about__text-highlight">Fun Fact:</span> I also have
-            a Photography business I run on the side and in my spare time. So if
-            you're in need of a Lifestyle/Wedding Photographer, dont be shy, hit
-            me up! - You can find my work here:{" "}
+            a Photography business I run on the side in my spare time. So if
+            you're in need of a Lifestyle/Wedding Photographer, dont be shy! -
+            You can find my work here:{" "}
             <a
               className="about__lusengo-photography"
               href="https://www.lusengophotography.com/"

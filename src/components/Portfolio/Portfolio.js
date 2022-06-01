@@ -3,12 +3,8 @@ import "./Portfolio.scss";
 import buildersCollective from "../../assets/images/images/builders-collective-img.png";
 import programmersLanguageQuiz from "../../assets/images/images/programmers-language-quiz-img.png";
 import marvelHeroQuest from "../../assets/images/images/marvel-hero-quest-img.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Portfolio = () => {
-  // initialising AOS (animate On Scroll)
-  AOS.init();
   return (
     <section id="portfolio" className="portfolio">
       <div className="portfolio__layer">
@@ -18,12 +14,7 @@ const Portfolio = () => {
         <div className="portfolio__projects-container">
           <ul className="portfolio__projects__list">
             {/* 01  */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
                 01.<sub>/5</sub>
               </p>
@@ -52,7 +43,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={buildersCollective}
                     alt="Builders Collective preview"
                   />
@@ -83,15 +74,9 @@ const Portfolio = () => {
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
 
             {/* 02 */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
                 02.<sub>/5</sub>
               </p>
@@ -112,7 +97,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={programmersLanguageQuiz}
                     alt="Programmers Language Quiz preview"
                   />
@@ -143,15 +128,9 @@ const Portfolio = () => {
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
 
             {/* 03 */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
                 03.<sub>/5</sub>
               </p>
@@ -170,7 +149,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={marvelHeroQuest}
                     alt="Marvel Hero Quest preview"
                   />
@@ -201,7 +180,6 @@ const Portfolio = () => {
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
           </ul>
         </div>
       </div>

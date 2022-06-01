@@ -1,0 +1,81 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.contact {
+  background-color: $primary1;
+  margin-top: 3.125rem;
+
+  &__title {
+    @include font-source(3.4375rem, 400);
+    padding: 1.25rem;
+    text-align: center;
+    font-family: optic, serif;
+  }
+
+  &__title-step-two {
+    display: none;
+  }
+
+  &__footer {
+    padding: 4.375rem;
+  }
+
+  &__links-list {
+    @include flex(space-around, center);
+  }
+
+  &__list-item {
+    @include font-source(1.25rem, 400);
+    margin-bottom: 1.25rem;
+    color: $primaryText;
+  }
+}
+
+@include tablet {
+  .contact {
+    &__title {
+      @include font-source(4.6875rem, 400);
+    }
+
+    &__list-item {
+      @include font-source(1.375rem, 400);
+    }
+  }
+}
+
+@include desktop {
+  .contact {
+    &__title {
+      padding: 3.1525rem 12.5rem 1.875rem 18.75rem;
+      text-align: start;
+    }
+
+    &__title-step-one {
+      margin-left: 2.5rem;
+    }
+
+    &__title-step-two {
+      margin-left: 5rem;
+      display: inline-block;
+    }
+
+    &__list-item {
+      font-size: 1.5625rem;
+
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: 2px solid $primary2;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        transform-origin: 100% 0%;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: 0% 100%;
+      }
+    }
+  }
+}

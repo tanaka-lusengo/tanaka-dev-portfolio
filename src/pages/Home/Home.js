@@ -1,8 +1,9 @@
 import React from "react";
 import About from "../../components/About/About";
 import Hero from "../../components/Hero/Hero";
-import Portfolio from "../../components/Portfolio/Portfolio";
 import TechStack from "../../components/TechStack/TechStack";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import Contact from "../../components/Contact/Contact";
 import "./Home.scss";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <TechStack />
       <Portfolio />
+      <Contact />
     </section>
   );
 };
