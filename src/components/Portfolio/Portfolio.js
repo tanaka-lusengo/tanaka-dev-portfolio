@@ -3,12 +3,9 @@ import "./Portfolio.scss";
 import buildersCollective from "../../assets/images/images/builders-collective-img.png";
 import programmersLanguageQuiz from "../../assets/images/images/programmers-language-quiz-img.png";
 import marvelHeroQuest from "../../assets/images/images/marvel-hero-quest-img.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import topBoy from "../../assets/images/images/top-boy.png";
 
 const Portfolio = () => {
-  // initialising AOS (animate On Scroll)
-  AOS.init();
   return (
     <section id="portfolio" className="portfolio">
       <div className="portfolio__layer">
@@ -18,14 +15,9 @@ const Portfolio = () => {
         <div className="portfolio__projects-container">
           <ul className="portfolio__projects__list">
             {/* 01  */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
-                01.<sub>/5</sub>
+                01.<sub>/4</sub>
               </p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">
@@ -52,7 +44,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={buildersCollective}
                     alt="Builders Collective preview"
                   />
@@ -79,21 +71,25 @@ const Portfolio = () => {
                       GitHub
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="portfolio__link-item portfolio__link-item--hover"
+                      href="/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Demo
+                    </a>
+                  </li>
                 </ul>
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
 
             {/* 02 */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
-                02.<sub>/5</sub>
+                02.<sub>/4</sub>
               </p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">
@@ -112,7 +108,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={programmersLanguageQuiz}
                     alt="Programmers Language Quiz preview"
                   />
@@ -139,21 +135,25 @@ const Portfolio = () => {
                       GitHub
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="portfolio__link-item portfolio__link-item--hover"
+                      href="/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Demo
+                    </a>
+                  </li>
                 </ul>
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
 
             {/* 03 */}
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-easing="ease-in-out-back"
-              className="portfolio__list-item"
-            >
+            <li className="portfolio__list-item">
               <p className="portfolio__number">
-                03.<sub>/5</sub>
+                03.<sub>/4</sub>
               </p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">Marvel Hero Quest</h2>
@@ -170,7 +170,7 @@ const Portfolio = () => {
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
                   <img
-                    className="portfolio__image"
+                    className="portfolio__image--hover"
                     src={marvelHeroQuest}
                     alt="Marvel Hero Quest preview"
                   />
@@ -197,11 +197,69 @@ const Portfolio = () => {
                       GitHub
                     </a>
                   </li>
+                  <li>
+                    <a
+                      className="portfolio__link-item portfolio__link-item--hover"
+                      href="https://www.loom.com/share/6b1e3d216e7345d593547af871638509"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Demo
+                    </a>
+                  </li>
                 </ul>
               </div>
               <hr className="portfolio__divide--mobile-tablet" />
             </li>
-            <hr className="portfolio__divide--desktop" />
+            {/* 04 */}
+            <li className="portfolio__list-item">
+              <p className="portfolio__number">
+                04.<sub>/4</sub>
+              </p>
+              <div className="portfolio__title-tech-stack-container">
+                <h2 className="portfolio__project-name">
+                  TopBoy - (Work In Progress)
+                </h2>
+                <p className="portfolio__description">
+                  A fully responsive fashion eCommerce website.
+                </p>
+                <ul className="portfolio__tech-stack-list">
+                  <li className="portfolio__tech-stack-item">- React</li>
+                  <li className="portfolio__tech-stack-item">
+                    Styled-Components
+                  </li>
+                  <li className="portfolio__tech-stack-item">JavaScript</li>
+                  <li className="portfolio__tech-stack-item">Redux</li>
+                  <li className="portfolio__tech-stack-item">Stripe</li>
+                  <li className="portfolio__tech-stack-item">JWT</li>
+                  <li className="portfolio__tech-stack-item">Node.js</li>
+                  <li className="portfolio__tech-stack-item">MongoDB</li>
+                </ul>
+              </div>
+              <div className="portfolio__project-link-container">
+                <div className="portfolio__image-container">
+                  <img
+                    className="portfolio__image--hover"
+                    src={topBoy}
+                    alt="TopBoy ecommerce site preview"
+                  />
+                </div>
+                <ul className="portfolio__external-link-list">
+                  <li className="portfolio__link-item">Go to --&gt;</li>
+                  <li>
+                    <a
+                      className="portfolio__link-item portfolio__link-item--hover"
+                      href="https://github.com/tanaka-lusengo/topboy-ecommerce-client"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <hr className="portfolio__divide--mobile-tablet" />
+            </li>
           </ul>
         </div>
       </div>
