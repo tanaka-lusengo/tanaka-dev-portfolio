@@ -3,23 +3,29 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
-a,
-li {
-  text-decoration: none;
+body {
+  font-family: "founders", serif;
+  color: $primaryText;
+}
+
+ol,
+ul {
   list-style: none;
 }
 
-html,
-body {
-  margin: 0;
-  font-family: "founders", serif;
-  color: $primaryText;
+li,
+a {
+  text-decoration: none;
 }

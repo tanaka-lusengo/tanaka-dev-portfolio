@@ -2,7 +2,6 @@ import React from "react";
 import "./TechStack.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useInView } from "react-hook-inview";
 import html from "../../assets/images/icons/html.svg";
 import css from "../../assets/images/icons/css.svg";
 import express from "../../assets/images/icons/express.svg";
@@ -20,22 +19,11 @@ const TechStack = () => {
   // initialising AOS (animate On Scroll)
   AOS.init();
 
-  // React Hook to activate code when div is in viewport
-  const [ref, isVisible] = useInView({
-    threshold: 1,
-  });
-
   return (
     <section id="tech-stack" className="tech-stack">
       <div className="tech-stack__layer">
-        <div className="tech-stack__title-container" ref={ref}>
-          {isVisible ? (
-            <h2 className="tech-stack__title--typeriter">
-              T E C H - S T A C K :
-            </h2>
-          ) : (
-            ""
-          )}
+        <div className="tech-stack__title-container">
+          <h2 className="tech-stack__title--typeriter">Tech - Stack:</h2>
         </div>
         <div
           data-aos="fade-up"

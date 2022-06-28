@@ -49,7 +49,7 @@
 @include desktop {
   .hero {
     &__title {
-      @include font-source(9.375rem, 400);
+      @include font-source(7.5rem, 400);
     }
 
     &__scroll-container {

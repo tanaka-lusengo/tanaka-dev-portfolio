@@ -12,69 +12,68 @@
     text-align: center;
     flex-wrap: wrap;
     font-family: optic;
-    margin: 60px 0;
+    margin: 3.75rem 0;
   }
 
   &__number {
-    @include font-source(30px, 400);
+    @include font-source(1.875rem, 400);
     font-family: optic;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   &__project-name {
-    margin: 5px 0 15px;
+    margin: 0.3125rem 0 0.9375rem;
   }
 
   &__tech-stack-list {
     @include flex(flex-start, center);
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 0.9375rem 0;
   }
 
   &__tech-stack-item {
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 
-  &__image {
+  &__image--hover {
     @include height-width(100%, 100%);
-    max-width: 300px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    max-width: 18.75rem;
     object-fit: cover;
+    border-radius: 5px;
   }
 
   &__external-link-list {
     @include flex(flex-start, center);
-    margin: 25px 0 30px;
+    margin: 1.5625rem 0 1.875rem;
   }
 
   &__link-item {
-    @include font-source(15px, 600);
+    @include font-source(0.9375rem, 600);
     color: $primaryText;
-    margin-right: 15px;
+    margin-right: 0.9375rem;
+    transition: all 0.2s ease-in-out;
 
     &--hover:hover {
-      border-bottom: 3px solid $primary1;
+      color: $primary2;
     }
   }
 
   &__divide--mobile-tablet {
-    margin: 0 auto 10px;
+    margin: 0 auto 0.625rem;
     border: none;
     background-color: $primaryText;
     color: $primaryText;
     border-radius: 5px;
-    height: 1.5px;
+    height: 0.0938rem;
     max-width: 700px;
-  }
-
-  &__divide--desktop {
-    display: none;
   }
 }
 
 @include tablet {
   .portfolio {
     &__layer {
-      margin: 0 70px;
+      margin: 0 4.375rem;
     }
     &__projects__list {
       text-align: center;
@@ -101,22 +100,26 @@
       justify-content: center;
     }
 
-    &__image {
+    &__image--hover {
       @include height-width(100%, 100%);
-      max-width: 350px;
+      max-width: 21.875rem;
     }
   }
 }
 
 @include desktop {
   .portfolio {
+    &__layer {
+      margin: 0 6.875rem;
+    }
+
     &__projects__list {
       text-align: start;
     }
 
     &__list-item {
       @include flex(space-between, center);
-      margin-bottom: 25px;
+      margin-bottom: 1.5625rem;
     }
 
     &__tech-stack-list {
@@ -124,22 +127,20 @@
     }
 
     &__description {
-      width: 700px;
+      width: 43.75rem;
+    }
+
+    &__image--hover {
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &__divide--mobile-tablet {
       display: none;
-    }
-
-    &__divide--desktop {
-      display: block;
-      margin: 0 auto 40px;
-      border: none;
-      background-color: $primaryText;
-      color: $primaryText;
-      border-radius: 5px;
-      height: 1.5px;
-      width: 500px;
     }
   }
 }
