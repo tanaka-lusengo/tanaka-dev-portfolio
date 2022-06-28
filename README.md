@@ -1,4 +1,4 @@
-# Developer's Portfolio
+# Tanaka - Personal Developer's Portfolio Site
 
 My personal developers website, design and built by myself.
 - Deployed site can be found here: TBC
