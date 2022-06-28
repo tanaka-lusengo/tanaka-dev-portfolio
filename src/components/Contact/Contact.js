@@ -11,16 +11,13 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div
         data-aos="fade-right"
-        data-aos-duration="1500"
+        data-aos-duration="2000"
         data-aos-easing="ease-in-out-back"
         className="contact__text-container"
       >
         <h1 className="contact__title">
           Feel free <br />
-          <span className="contact__title-step-one">To contact me</span> <br />
-          <span className="contact__title-step-two">
-            With any enquiries you may have!
-          </span>
+          <span className="contact__title-step-one">To contact me!</span> <br />
         </h1>
       </div>
 
@@ -29,7 +26,7 @@ const Contact = () => {
           <li>
             <a
               className="contact__list-item"
-              href="#"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >

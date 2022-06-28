@@ -8,13 +8,13 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <section>
+    <main>
       <Hero />
       <About />
       <TechStack />
       <Portfolio />
       <Contact />
-    </section>
+    </main>
   );
 };
 

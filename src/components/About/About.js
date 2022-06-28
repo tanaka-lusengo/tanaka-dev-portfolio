@@ -27,7 +27,11 @@ const About = () => {
           </div>
         </div>
         <div className="about__text-container">
-          <p data-aos="fade-right" className="about__text">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="about__text"
+          >
             <span className="about__text-highlight">Born in London</span>,
             attended school in South Africa before coming back to the UK to
             further pursue higher education and new experiences. After exploring
@@ -35,18 +39,30 @@ const About = () => {
             Design and Data Science, this eventually lead to a career change
             from Property Development into Web Development!
           </p>
-          <p data-aos="fade-right" className="about__text">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="about__text"
+          >
             <span className="about__text-highlight">Post Graduation</span> from
             a 3-month immersive Web Development Bootcamp, I felt honored to be
             selected to stay on and rejoin the company as a Web Development
             Teaching Assistant to help support and mentor the next cohort.
           </p>
-          <p data-aos="fade-right" className="about__text">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="about__text"
+          >
             <span className="about__text-highlight">Always Curious</span> and
             eager to learn, meet new people as well as take on new and exciting
             challenges however large or small!
           </p>
-          <p data-aos="fade-right" className="about__text">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            className="about__text"
+          >
             <span className="about__text-highlight">Fun Fact:</span> I also have
             a Photography business I run on the side in my spare time. So if
             you're in need of a Lifestyle/Wedding Photographer, dont be shy! -

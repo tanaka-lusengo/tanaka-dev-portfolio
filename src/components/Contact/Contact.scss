@@ -13,10 +13,6 @@
     font-family: optic, serif;
   }
 
-  &__title-step-two {
-    display: none;
-  }
-
   &__footer {
     padding: 4.375rem;
   }
@@ -53,11 +49,6 @@
 
     &__title-step-one {
       margin-left: 2.5rem;
-    }
-
-    &__title-step-two {
-      margin-left: 5rem;
-      display: inline-block;
     }
 
     &__list-item {

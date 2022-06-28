@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Hero.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="hero__banner-container">
         <div
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out-back"
           className="hero__banner-title"
         >
@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div
           data-aos="fade-left"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out-back"
           className="hero__banner-title"
         >
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out-back"
           className="hero__banner-title"
         >
