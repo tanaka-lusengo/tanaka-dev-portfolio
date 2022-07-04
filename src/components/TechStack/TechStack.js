@@ -37,6 +37,7 @@ const TechStack = () => {
             With experience in: UI/UX Design & Data Science.
           </p>
         </div>
+
         <div className="tech-stack__icons">
           <ul className="tech-stack__list">
             <li>
@@ -77,6 +78,9 @@ const TechStack = () => {
                 alt="typescript icon"
               />
             </li>
+          </ul>
+
+          <ul className="tech-stack__list">
             <li>
               <img
                 className="tech-stack__list-item"
