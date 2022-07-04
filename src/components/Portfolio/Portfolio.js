@@ -41,11 +41,17 @@ const Portfolio = () => {
               </div>
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
-                  <img
-                    className="portfolio__image--hover"
-                    src={buildersCollective}
-                    alt="Builders Collective preview"
-                  />
+                  <a
+                    href="https://builders-collective.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="portfolio__image--hover"
+                      src={buildersCollective}
+                      alt="Builders Collective preview"
+                    />
+                  </a>
                 </div>
                 <ul className="portfolio__external-link-list">
                   <li>
@@ -102,11 +108,17 @@ const Portfolio = () => {
               </div>
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
-                  <img
-                    className="portfolio__image--hover"
-                    src={programmersLanguageQuiz}
-                    alt="Programmers Language Quiz preview"
-                  />
+                  <a
+                    href="https://programmers-language-quiz.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="portfolio__image--hover"
+                      src={programmersLanguageQuiz}
+                      alt="Programmers Language Quiz preview"
+                    />
+                  </a>
                 </div>
                 <ul className="portfolio__external-link-list">
                   <li>
@@ -161,11 +173,17 @@ const Portfolio = () => {
               </div>
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
-                  <img
-                    className="portfolio__image--hover"
-                    src={marvelHeroQuest}
-                    alt="Marvel Hero Quest preview"
-                  />
+                  <a
+                    href="https://marvel-hero-quest.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="portfolio__image--hover"
+                      src={marvelHeroQuest}
+                      alt="Marvel Hero Quest preview"
+                    />
+                  </a>
                 </div>
                 <ul className="portfolio__external-link-list">
                   <li>
@@ -227,11 +245,17 @@ const Portfolio = () => {
               </div>
               <div className="portfolio__project-link-container">
                 <div className="portfolio__image-container">
-                  <img
-                    className="portfolio__image--hover"
-                    src={topBoy}
-                    alt="TopBoy ecommerce site preview"
-                  />
+                  <a
+                    href="https://github.com/tanaka-lusengo/topboy-ecommerce-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="portfolio__image--hover"
+                      src={topBoy}
+                      alt="TopBoy ecommerce site preview"
+                    />
+                  </a>
                 </div>
                 <ul className="portfolio__external-link-list">
                   <li>
