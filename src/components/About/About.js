@@ -64,8 +64,8 @@ const About = () => {
             className="about__text"
           >
             <span className="about__text-highlight">Fun Fact:</span> I also have
-            a Photography business I run on the side in my spare time. So if
-            you're in need of a Lifestyle/Wedding Photographer, dont be shy! -
+            a photography business I run on the side in my spare time. So if
+            you're in need of a Lifestyle/Wedding Photographer, don't be shy! -
             You can find my work here:{" "}
             <a
               className="about__lusengo-photography"
