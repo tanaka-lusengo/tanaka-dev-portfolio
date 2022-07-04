@@ -19,11 +19,13 @@
 
   &__links-list {
     @include flex(space-around, center);
+    flex-wrap: wrap;
   }
 
   &__list-item {
     @include font-source(1.25rem, 400);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5625rem;
+    padding: 0 0.625rem;
     color: $primaryText;
   }
 }

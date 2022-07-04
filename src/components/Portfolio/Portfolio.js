@@ -16,9 +16,7 @@ const Portfolio = () => {
           <ul className="portfolio__projects__list">
             {/* 01  */}
             <li className="portfolio__list-item">
-              <p className="portfolio__number">
-                01.<sub>/4</sub>
-              </p>
+              <p className="portfolio__number">01.</p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">
                   Builders' Collective
@@ -50,7 +48,6 @@ const Portfolio = () => {
                   />
                 </div>
                 <ul className="portfolio__external-link-list">
-                  <li className="portfolio__link-item">Go to --&gt;</li>
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"
@@ -74,7 +71,7 @@ const Portfolio = () => {
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"
-                      href="/"
+                      href="https://www.loom.com/share/80e185f86ff544c8b9eed7ac8d406de1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -88,9 +85,7 @@ const Portfolio = () => {
 
             {/* 02 */}
             <li className="portfolio__list-item">
-              <p className="portfolio__number">
-                02.<sub>/4</sub>
-              </p>
+              <p className="portfolio__number">02.</p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">
                   Programmers Language Quiz
@@ -114,11 +109,10 @@ const Portfolio = () => {
                   />
                 </div>
                 <ul className="portfolio__external-link-list">
-                  <li className="portfolio__link-item">Go to --&gt;</li>
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"
-                      href="https://programmers-language-quiz.herokuapp.com/"
+                      href="https://programmers-language-quiz.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -138,7 +132,7 @@ const Portfolio = () => {
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"
-                      href="/"
+                      href="https://www.loom.com/share/28761309f0d9435c8ccfecc70b1bdf41"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -152,9 +146,7 @@ const Portfolio = () => {
 
             {/* 03 */}
             <li className="portfolio__list-item">
-              <p className="portfolio__number">
-                03.<sub>/4</sub>
-              </p>
+              <p className="portfolio__number">03.</p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">Marvel Hero Quest</h2>
                 <p className="portfolio__description">
@@ -176,11 +168,10 @@ const Portfolio = () => {
                   />
                 </div>
                 <ul className="portfolio__external-link-list">
-                  <li className="portfolio__link-item">Go to --&gt;</li>
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"
-                      href="https://marvel-hero-quest.herokuapp.com/"
+                      href="https://marvel-hero-quest.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -213,9 +204,7 @@ const Portfolio = () => {
             </li>
             {/* 04 */}
             <li className="portfolio__list-item">
-              <p className="portfolio__number">
-                04.<sub>/4</sub>
-              </p>
+              <p className="portfolio__number">04.</p>
               <div className="portfolio__title-tech-stack-container">
                 <h2 className="portfolio__project-name">
                   TopBoy - (Work In Progress)
@@ -245,7 +234,6 @@ const Portfolio = () => {
                   />
                 </div>
                 <ul className="portfolio__external-link-list">
-                  <li className="portfolio__link-item">Go to --&gt;</li>
                   <li>
                     <a
                       className="portfolio__link-item portfolio__link-item--hover"

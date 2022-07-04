@@ -8,26 +8,26 @@
   &__layer {
     position: relative;
     margin: 0 2.5rem;
-    padding: 20px 0;
+    padding: 1.25rem 0;
   }
 
   &__title {
     @include font-source(55px, 400);
     font-family: optic;
     position: relative;
-    top: 100px;
+    top: 6.25rem;
   }
 
   &__image {
     @include height-width(100%, 100%);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
+    max-width: 50rem;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   &__text {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   &__text-highlight {
@@ -46,7 +46,7 @@
   &__divide {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 }
 
@@ -54,14 +54,13 @@
   .about {
     &__title {
       @include font-source(100px, 400);
-      top: 160px;
+      top: 10rem;
     }
 
     &__text {
       @include font-source(15px, 400);
-      max-width: 800px;
-      margin: 0 50px 20px;
-      margin-bottom: 20px;
+      max-width: 50rem;
+      margin: 0 3.125rem 1.25rem;
     }
   }
 }
@@ -73,12 +72,12 @@
     }
 
     &__text-container {
-      margin-top: 200px;
+      margin-top: 12.5rem;
     }
 
     &__text {
       @include font-source(18px, 400);
-      width: 500px;
+      width: 31.25rem;
     }
   }
 }
