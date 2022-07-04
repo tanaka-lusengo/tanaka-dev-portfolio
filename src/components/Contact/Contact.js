@@ -26,7 +26,7 @@ const Contact = () => {
           <li>
             <a
               className="contact__list-item"
-              href="/"
+              href="https://drive.google.com/file/d/1Hyz3sRImVQEkCKaaYuhsaoiIit7MIDB7/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

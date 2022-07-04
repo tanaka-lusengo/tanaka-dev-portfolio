@@ -3,7 +3,8 @@
 @use "../../styles/partials/typography" as *;
 
 .tech-stack {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
+
   &__layer {
     margin: 0 2.5rem;
   }
@@ -22,7 +23,7 @@
   }
 
   &__icons {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   &__list {
@@ -33,7 +34,7 @@
   &__list-item {
     @include height-width(auto, 5.625rem);
     object-fit: fill;
-    margin: 3.125rem 0.9375rem 1.875rem;
+    margin: 3.125rem 2.1875rem 1.875rem;
   }
 }
 
@@ -58,6 +59,14 @@
       letter-spacing: 0.2rem;
       animation: typing 5s steps(50, end), blink-caret 1.5s step-end infinite;
       animation-iteration-count: infinite;
+    }
+
+    &__list-item {
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     @keyframes typing {
