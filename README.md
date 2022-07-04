@@ -1,7 +1,7 @@
 # Tanaka - Personal Developer's Portfolio Site
 
 My personal developers website, design and built by myself.
-- Deployed site can be found here: TBC
+- Deployed site can be found here: https://www.tanakalusengo.dev/
 
 ## Table of Content:
 - About The App
@@ -11,15 +11,15 @@ My personal developers website, design and built by myself.
 
 ## Technologies
 
-TopBoy eCommerce uses a number of technoloies to work:
+My Portfolio site uses a number of technoloies to work:
 
 - [React js]
-- [Sass]
 - [JavaScript]
+- [Sass]
 
 ## Setup / Installation
 
-You can find the deployed site on: TBC
+You can find the deployed site on: https://www.tanakalusengo.dev/
 
 alternatively to use on your local machine:
 
@@ -29,8 +29,7 @@ git clone git@github.com:tanaka-lusengo/tanaka-dev-portfolio.git
 cd tanaka-dev-portfolio
 ```
 
-Install the dependencies and devDependencies and start the server:
-
+Install the dependencies and devDependencies and start the server
 
 ```sh
 cd tanaka-dev-portfolio
@@ -46,4 +45,3 @@ Tanaka-dev-portfolio is in Version 1
 
 ## Contact
 - Tanaka Lusengo - tc.lusengo@gmail.com | https://www.linkedin.com/in/tanakalusengo/
-- Project Link: https://github.com/tanaka-lusengo/tanaka-dev-portfolio
