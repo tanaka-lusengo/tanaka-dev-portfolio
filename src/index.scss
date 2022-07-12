@@ -1,3 +1,11 @@
+@use "./styles/partials/mixins" as *;
+
 * {
-  cursor: none;
+  cursor: default;
+}
+
+@include tablet {
+  * {
+    cursor: none;
+  }
 }
