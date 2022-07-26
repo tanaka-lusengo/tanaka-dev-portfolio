@@ -4,7 +4,6 @@ import Hero from "../../components/Hero/Hero";
 import TechStack from "../../components/TechStack/TechStack";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import Contact from "../../components/Contact/Contact";
-import "./Home.scss";
 
 const Home = () => {
   return (

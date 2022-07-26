@@ -34,7 +34,7 @@
   &__list-item {
     @include height-width(auto, 5.625rem);
     object-fit: fill;
-    margin: 3.125rem 2.1875rem 1.875rem;
+    margin: 3.125rem 1.5625rem 1.875rem;
   }
 }
 
@@ -46,6 +46,10 @@
 
     &__text-container {
       @include font-source(1.25rem, 400);
+    }
+
+    &__list-item {
+      margin: 3.125rem 2.5rem 1.875rem;
     }
   }
 }
