@@ -7,13 +7,11 @@ import css from "../../assets/images/icons/css.svg";
 import express from "../../assets/images/icons/express.svg";
 import javascript from "../../assets/images/icons/javascript.svg";
 import mongodb from "../../assets/images/icons/mongodb.svg";
-import mysql from "../../assets/images/icons/mysql.svg";
+import postgresql from "../../assets/images/icons/postgresql.svg";
 import nodejs from "../../assets/images/icons/nodejs.svg";
-import python from "../../assets/images/icons/python.svg";
 import react from "../../assets/images/icons/react.svg";
 import sass from "../../assets/images/icons/sass.svg";
 import socketio from "../../assets/images/icons/socketio.svg";
-import typescript from "../../assets/images/icons/typescript.svg";
 
 const TechStack = () => {
   // initialising AOS (animate On Scroll)
@@ -71,23 +69,9 @@ const TechStack = () => {
                 alt="javascript icon"
               />
             </li>
-            <li>
-              <img
-                className="tech-stack__list-item"
-                src={typescript}
-                alt="typescript icon"
-              />
-            </li>
           </ul>
 
           <ul className="tech-stack__list">
-            <li>
-              <img
-                className="tech-stack__list-item"
-                src={python}
-                alt="python icon"
-              />
-            </li>
             <li>
               <img
                 className="tech-stack__list-item"
@@ -119,7 +103,7 @@ const TechStack = () => {
             <li>
               <img
                 className="tech-stack__list-item"
-                src={mysql}
+                src={postgresql}
                 alt="mysql icon"
               />
             </li>
